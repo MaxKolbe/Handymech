@@ -1,0 +1,54 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #ffffff;
+    --black: #000000; 
+    --red: #E50914;
+}
+@font-face {
+    font-family: 'MenaRegular'; /* You can choose any name for your font */
+    src: url('./fonts/mena-grotesk/Mena/Grotesk/Regular.otf') format('opentype'); 
+}
+
+/*NAVIGATION-BAR*/
+.topbar_section{
+    padding: 1.2rem 4rem;
+}
+.top_bar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'MenaRegular', sans-serif;
+    font-size: 1.2rem;
+}
+.top_bar img{
+    width: 240px;
+}
+.top_bar nav ul li{
+    list-style: none;
+	display: inline-block;
+	margin-left: 2rem;
+}
+.top_bar nav ul li a{
+    text-decoration: none;
+    color: var(--black);
+}
+.login{
+    text-decoration: none;
+    border: 1px solid var(--red);
+    color: var(--red);
+    padding: .8rem 1.8rem;
+    border-radius: 4px;
+}
+.signup{
+    text-decoration: none;
+    background: linear-gradient(to right, #E50914, #99060D);
+    color: var(--white);
+    padding: 1rem 1.8rem;
+    border-radius: 36px;
+    margin-left: .8rem;
+}
