@@ -12,8 +12,15 @@
     font-family: 'MenaRegular'; /* You can choose any name for your font */
     src: url('./fonts/mena-grotesk/Mena/Grotesk/Regular.otf') format('opentype'); 
 }
-
-/*NAVIGATION-BAR*/
+@font-face {
+    font-family: 'Downey'; /* You can choose any name for your font */
+    src: url('./fonts/downey/Downey/DEMO.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'PlusJakartaSans'; /* You can choose any name for your font */
+    src: url('./fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf') format('truetype'); 
+}
+/* NAVIGATION-BAR */
 .topbar_section{
     padding: 1.2rem 4rem;
 }
@@ -51,4 +58,306 @@
     padding: 1rem 1.8rem;
     border-radius: 36px;
     margin-left: .8rem;
+}
+/* HERO */
+.hero_section{
+    background-image: url('./images/car.png');
+    background-size: cover; /* Adjust as needed: cover, contain, or specific dimensions */
+    background-repeat: no-repeat; /* To prevent repeating the image */
+    background-position: center center; /* Center the image horizontally and vertically */
+    padding: 8rem 0;
+    margin: 0;
+    color: var(--white);
+}
+.hero{
+    padding: 0 4rem;
+    max-width: 640px;
+}
+.hero h6{
+    font-family: 'MenaRegular', sans-serif;
+    font-weight: lighter;
+    font-size: 1rem;
+    opacity: 0.8;
+    letter-spacing: 0.2rem;
+    margin-bottom: 0.4rem;
+}
+.hero h1{
+    font-family: 'Downey', sans-serif;
+    font-size: 4rem;
+    margin-bottom: 0.4rem;
+}
+.hero p{
+    font-family: 'MenaRegular', sans-serif;
+    font-weight: 400;
+    font-size: 1.2rem;
+    margin-bottom: 1.8rem;
+    letter-spacing: 0.02rem;
+}
+.link img{
+    width: 150px;
+    margin-right: 1rem;
+}
+/* MID */
+.mid{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    left: 50%;
+    top: 96%;
+    background: linear-gradient(to top, #E50914, #99060D);
+    padding: 3rem 0;
+}
+.mid p{
+    font-family: 'Downey', sans-serif;
+    font-weight: 700;
+    font-size: 2.8rem;
+    text-align: center;
+    color: var(--white);
+}
+/* SERVICES */
+.services{
+    background-color: var(--black);
+    padding-top: 4.4rem;
+    padding-bottom: 2rem;
+}
+.container{
+    padding: 0 4rem;
+}
+.row{
+	display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    color: var(--white);
+}
+.col_1{
+	flex-basis: 30%;
+}
+.col_2{
+	flex-basis: 30%;
+}
+.col_3{
+	flex-basis: 30%;
+}
+.row h1{
+    font-family: 'Mena Grotesk', sans-serif;
+    font-weight: 800;
+    font-size: 8rem;
+    text-align: center;
+    color: var(--black);
+    -webkit-text-stroke: 2px var(--white); /* Width and color of the text stroke */
+}
+.col_1 h6{
+    font-family: 'Downey', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: left;
+}
+.col_1 p{
+    font-family: 'Mena Grotesk', sans-serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    text-align: left;
+    margin-top: .4rem;
+}
+.col_2 h6{
+    font-family: 'Downey', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: center;
+}
+.col_2 p{
+    font-family: 'Mena Grotesk', sans-serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    text-align: center;
+    margin-top: .4rem;
+}
+.col_3 h6{
+    font-family: 'Downey', sans-serif;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    text-align: right;
+}
+.col_3 p{
+    font-family: 'Mena Grotesk', sans-serif;
+    font-weight: lighter;
+    font-size: 0.8rem;
+    opacity: 0.8;
+    text-align: right;
+    margin-top: .4rem;
+}
+/* SECTIONS */
+.artl{
+    padding-top: 2rem;
+}
+.artl_text{
+    flex-basis: 50%;
+    text-align: left;
+}
+.rect{
+    height: 28vh;
+    position: absolute;
+    transform: translate(-50%, 20%);
+}
+#fst{
+    margin-top: 8rem;
+    margin-left: 1rem;
+}
+.artl_text h3{
+    font-family: 'Downey', sans-serif;
+    font-weight: 400;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    color: var(--red);
+    margin-top: 4rem;
+}
+.artl_text p{
+    font-family: 'MenaRegular', sans-serif;
+    font-weight: 300;
+    font-size: 1.4rem;
+    color: var(--black);
+    margin-top: 1.4rem;
+    margin-bottom: 4rem;
+}
+.artl_text a{
+    text-decoration: none;
+    border: 1px solid var(--red);
+    color: var(--red);
+    padding: .8rem 2.8rem;
+    border-radius: 32px;
+}
+.artl_pic{
+    flex-basis: 50%;
+    width: 1%;
+    max-width: 520px;
+}
+.scd{
+    margin-top: 8rem;
+}
+/* DOWNLOAD */
+.download_section{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+.download_section h3{
+    font-family: 'Downey', sans-serif;
+    font-size: 2.8rem;
+    margin-bottom: 1.4rem;
+    color: var(--black);
+}
+/* CONTACTUS */
+.contact_section{
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    text-align: center;
+    background-color: var(--black);
+}
+.contact_section h3{
+    font-family: 'Downey', sans-serif;
+    font-size: 2.6rem;
+    margin-bottom: 1.4rem;
+    font-weight: 400;
+    color: var(--white);
+}
+.fa-facebook-f{
+    padding: 2% 2.6%;
+}
+.fa-x-twitter{
+    padding: 2%;
+}
+.fa-instagram{
+    padding: 2% 2.4%;
+}
+.fa-whatsapp{
+    padding: 2% 2.4%;
+}
+.contact_div{
+    margin-left: .2rem;
+}
+.contact_div i{
+    font-size: 2.4rem;
+    color: var(--black);
+    border: 1px solid black;
+    border-radius: 50%;
+    background-color: var(--white);
+    margin: 0 .4rem;
+}
+hr{
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+}
+/* FOOTER */
+footer{
+    padding-top: .8rem;
+    padding-bottom: 2rem;
+}
+.fot1, .fot2, .fot3{
+    text-align: left;
+}
+.fot1 h6, .fot2 h6, .fot3 h6{
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-size: 1rem;
+    color: var(--black); 
+}
+.fot1 a, .fot2 a, .fot3 a{
+    text-decoration: none;
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-size: 1rem;
+    color: var(--black); 
+}
+.fot1 a p, .fot2 a p, .fot3 a p{
+    margin-top: .4rem;
+}
+footer img{
+    width: 240px;
+    height: 80px;
+}
+.footer_div{
+    text-align: center;
+    padding-top: .4rem;
+    padding-bottom: 2.8rem;
+}
+.left, .right{
+    color: var(--black);
+    display: flex;
+    flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-size: .8rem;
+}
+.left ul li{
+    list-style: none;
+	display: inline-block;
+	margin-left: 2rem;
+}
+.left ul li a{
+    text-decoration: none;
+    color: var(--black);
+}
+.left i{
+    margin-right: .4rem;
+    font-size: .9rem;
+}
+.left select{
+    border: none;
+    outline: none;
+    font-family: 'PlusJakartaSans', sans-serif;
+    font-size: .8rem;
+}
+.right p a{
+ text-decoration: none;
+ color: var(--red);
+ font-size: .8rem;
+ margin-right: .6rem;
+ margin-left: .1rem;
+}
+.bottom{
+    padding-bottom: 1rem;
 }
