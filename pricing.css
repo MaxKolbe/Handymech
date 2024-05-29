@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #ffffff;
+    --black: #000000; 
+    --red: #E50914;
+}
+@font-face {
+    font-family: 'MenaRegular'; /* You can choose any name for your font */
+    src: url('./fonts/mena-grotesk/Mena/Grotesk/Regular.otf') format('opentype'); 
+}
+@font-face {
+    font-family: 'Downey'; /* You can choose any name for your font */
+    src: url('./fonts/downey/Downey/DEMO.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'PlusJakartaSans'; /* You can choose any name for your font */
+    src: url('./fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf') format('truetype'); 
+}
+.back{
+    margin-left: 20px;
+}
+.fa-angle-left{
+    color: var(--black);
+    font-size: 32px;
+    margin-top: 10px;
+}
+.head{
+    padding: 20px 180px;
+    text-align: left;
+    font-weight: 700;
+    font-family: 'Downey', sans-serif;
+    text-transform: uppercase;
+    font-size: 40px;
+    max-width: 960px;
+}
+.head span{
+    color: var(--red);
+}
+.bg{
+background-color:var(--white)
+}
+.container{
+padding: 20px 140px;
+}
+.price-row{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+.col-1, .col-2, .col-3{
+flex-basis: 31%;
+text-align: center;
+}
+.col-1, .col-2, .col-3{
+font-family: 'MenaRegular', sans-serif;
+border-radius: 10px;
+background-color: white;
+box-shadow: 2px 2px 4px 4px #d3d3d3;
+padding: 28px 14px;
+color: var(--black);
+}
+.col-1 h5, .col-2 h5, .col-3 h5{
+font-size: 28px;
+font-weight: 700;
+font-family: 'Downey', sans-serif;
+}
+.col-1 h1,.col-2 h1, .col-3 h1{
+margin-top: 40px;
+margin-bottom: 30px;
+font-size: 68px;
+font-weight: 700;
+font-family: 'Downey', sans-serif;
+}
+.col-1 p, .col-2 p, .col-3 p{
+margin-top: 12px;
+margin-bottom: 12px;
+font-size: 16px;
+}
+.col-1 button, .col-2 button, .col-3 button{
+cursor: pointer;
+margin-top: 40px;
+padding: 12px;
+color: var(--white);
+font-weight: bold;
+width: 80%;
+border: none;
+border-radius: 5px;
+transition: .5s;
+background: var(--red);
+}
+.col-2{
+    box-shadow: none;
+    background-color: var(--black);
+    color: var(--white);
+}
+.op{
+    text-align: left;
+    margin-left: 36px;
+}
+#op{
+    text-align: left;
+    margin-left: 24px;
+}
+i{
+    color: var(--red);
+}
+
+
+/* MEDIA-QUERIES */
+
+@media only screen and (max-width: 1080px) {
+    .container{
+        padding: 20px 25px;
+    }
+    .col-1, .col-2, .col-3{
+        flex-basis: 100%;
+        margin-bottom: 40px;
+    } 
+    .op{
+        text-align: center;
+        margin-left: 0px;
+    }
+    #op{
+        text-align: center;
+        margin-left: 0px;
+    }
+    .head{
+        padding: 20px;
+        font-size: 40px;
+    }
+    .fa-angle-left{
+        font-size: 28px;
+        margin-top: 20px;
+    }
+}
