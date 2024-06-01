@@ -484,12 +484,3 @@ footer img{
         height: 24vh;
     }
 }
-@media only screen and (max-width: 496PX) {
-    /* SECTIONS */
-    .rect{
-        display: block;
-    }
-    #fst{
-        margin-left: 1rem;
-    }
-}
