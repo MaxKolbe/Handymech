@@ -480,6 +480,9 @@ footer img{
     .bottom{
         display: none;
     }
+    .rect{
+        height: 24vh;
+    }
 }
 @media only screen and (max-width: 496PX) {
     /* SECTIONS */
