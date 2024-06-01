@@ -99,13 +99,12 @@
 }
 /* MID */
 .mid{
-    position: absolute;
+    position: relative;
     display: flex;
     justify-content: center;
-    transform: translate(-50%, -50%);
+    margin: 0 auto;
     width: 80%;
-    left: 50%;
-    top: 96%;
+    top: -2.4rem;
     background: linear-gradient(to top, #E50914, #99060D);
     padding: 3rem 0;
 }
@@ -119,7 +118,6 @@
 /* SERVICES */
 .services{
     background-color: var(--black);
-    padding-top: 4.4rem;
     padding-bottom: 2rem;
 }
 .container{
@@ -361,25 +359,14 @@ footer img{
 .bottom{
     padding-bottom: 1rem;
 }
+
+
 /* MEDIA QUERIES */
-@media only screen and (min-width: 1308PX) {
-    .mid{
+@media only screen and (max-width: 1024PX) {
+    nav, .in{
         display: none;
     }
-}
-@media only screen and (max-width: 1024PX) {
-   nav, .in{
-    display: none;
-   }
-   .mid{
-    transform: translate(-50%, 90%);
-    left: 50%;
-    top: 96%;
-    padding: 2rem 0;
-    }
-    .mid p{
-        font-size: 2.8rem;
-    }   
+    /* SECTIONS */
     .rect{
         display: none;
     }
@@ -411,8 +398,95 @@ footer img{
     .rowrv{
         flex-wrap: wrap-reverse;
     }
-   
+    .right p a{
+        margin-right: .2rem;
+    }
+    /* BOTTOM */
+    .left i{
+        margin-right: .1rem;
+    }
+    .left ul li{
+        margin-left: .8rem;
+    }
 }
-@media only screen and (max-width: 960PX) {
-   
+@media only screen and (max-width: 770PX) {
+    .container{
+        padding: 0 2rem;
+    }
+    .topbar_section{
+        padding: 1rem 2rem;
+    }
+    .hero{
+        padding: 0 2rem;
+    }
+    /* MID */
+    .mid p{
+        font-size: 2.4em;
+    }
+    /* SERVICES */
+    .col_1, .col_2, .col_3{
+        flex-basis: 100%;
+    }
+    .col_1 p, .col_3 p, .col_1 h6, .col_3 h6{
+        text-align: center;
+    }
+    /* SECTIONS */
+    .artl_text{
+        text-align: left;
+    }
+    .text-lt{
+        text-align:right;
+    }
+    .artl_pic{
+        width: 80%;
+        max-width: 420px;
+    }
+    .artl_text h3{
+        line-height: 2.2rem;
+        font-size: 1.9rem;
+    }
+    .artl_text p{
+        font-size: 1rem;
+    }
+    /* DOWNLOAD */
+    .download_section{
+        padding-top: 2.5rem;
+        padding-bottom: 2.5rem;
+    }
+    .download_section h3{
+        font-family: 'Downey', sans-serif;
+        font-size: 2.2rem;
+    }
+    /* CONTACTUS */
+    .contact_section{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+    .contact_section h3{
+        font-size: 1.8rem;
+    }
+    .fa-facebook-f{
+        padding: 2% 4%;
+    }
+    /* FOOTER */
+    footer{
+        padding-top: .2rem;
+    }
+    .fot1, .fot2, .fot3{
+        flex-basis: 100%;
+        margin-top: 2rem;
+    }
+    /* BOTTOM */
+    .bottom{
+        display: none;
+    }
+}
+@media only screen and (max-width: 496PX) {
+    /* SECTIONS */
+    .rect{
+        display: block;
+    }
+    #fst{
+        margin-left: 1rem;
+    }
 }
