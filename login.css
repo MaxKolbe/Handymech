@@ -1,0 +1,152 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #ffffff;
+    --black: #000000; 
+    --red: #A2060D;
+    ;
+}
+@font-face {
+    font-family: 'MenaRegular'; /* You can choose any name for your font */
+    src: url('./fonts/mena-grotesk/Mena/Grotesk/Regular.otf') format('opentype'); 
+}
+@font-face {
+    font-family: 'Downey'; /* You can choose any name for your font */
+    src: url('./fonts/downey/Downey/DEMO.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'PlusJakartaSans'; /* You can choose any name for your font */
+    src: url('./fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf') format('truetype'); 
+}
+.back{
+    margin-left: 20px;
+}
+.back{
+    color: var(--white);
+    position: absolute;
+}
+.fa-angle-left{
+    font-size: 32px;
+    margin-top: 10px;
+}
+.signup{
+    display: flex;
+    flex-direction: row;
+    height: 100vh;
+}
+.lft, .rgt{
+    flex-basis: 50%;
+}
+.lft{
+    background-image: url("./images/signpic.png");
+    background-repeat: no-repeat; 
+    
+}
+.lft img{
+    display: flex;
+    margin: 42% auto;
+    width: 240px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    padding-top: 12rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    /* padding: 8rem 1rem 0rem 1rem; */
+}
+form h1{
+    font-family: 'Downey', sans-serif;
+    color: var(--black);
+    font-size: 2.2rem;
+    margin-bottom: 2rem;
+}
+form h1 span{
+    color: var(--red);
+}
+form p{
+    margin-bottom: 1.4rem;
+}
+form p a{
+    text-decoration: none;
+    font-family: 'MenaRegular', sans-serif;
+    font-size: 1rem;
+}
+input{
+    padding: .8rem;
+    margin-bottom: 1.4rem;
+    width: 80%;
+    border: 2px solid var(--black);
+    border-radius: .4rem;
+}
+input::placeholder{
+    font-family: 'MenaRegular', sans-serif;
+    color: var(--black)
+}
+form p a{
+    color: var(--black);
+}
+form p{
+    font-family: 'MenaRegular', sans-serif;
+    font-size: .8rem;
+}
+.handy{
+    font-family: 'MenaRegular', sans-serif;
+    padding: .8rem .4rem;
+    margin-bottom: 1.4rem;
+    width: 38.4%;
+    border-radius: .4rem;
+    margin-right: 1rem;
+    border: none;
+    background-color: var(--red);
+    color: var(--white);
+    cursor: pointer;
+    font-size: .8em;
+}
+
+/* MEDIA-QUERIES */
+@media only screen and (max-width: 1024px) {
+    .fa-angle-left{
+        font-size: 28px;
+        margin-top: 20px;
+    }
+    .back{
+        color: var(--black);
+    }
+    form{
+        padding: 10rem 2rem;
+    }
+    .lft img{
+        margin: 60% auto;  
+    }
+}
+@media only screen and (max-width: 770px) {
+    .lft{
+        display: none;
+    }
+    .rgt{
+        flex-basis: 100%;
+    }
+    input{
+        width: 100%;
+    }
+    form{
+        padding: 8rem 1rem;
+    }
+    .button{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .handy{
+        width: 50%;
+        margin-right: .2rem;
+    }
+    form p{
+        text-align: center;
+    }
+
+}
