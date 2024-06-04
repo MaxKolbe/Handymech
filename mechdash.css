@@ -1,0 +1,71 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #ffffff;
+    --black: #000000; 
+    --red: #E50914;
+}
+@font-face {
+    font-family: 'MenaRegular'; /* You can choose any name for your font */
+    src: url('./fonts/mena-grotesk/Mena/Grotesk/Regular.otf') format('opentype'); 
+}
+@font-face {
+    font-family: 'Downey'; /* You can choose any name for your font */
+    src: url('./fonts/downey/Downey/DEMO.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'PlusJakartaSans'; /* You can choose any name for your font */
+    src: url('./fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf') format('truetype'); 
+}
+
+.container{
+    padding: .4rem 2rem;
+}
+.logo{
+    width: 200px;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+.col_1{
+    flex-basis: 24%;
+    background-color: var(--black);
+    padding: 4.78rem 4rem;
+}
+.col_2{
+    flex-basis: 60%;
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+}
+.col_1 p{
+    margin-bottom: 4rem;
+    /* text-align: center; */
+    text-decoration: none;
+    color: var(--white);
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.col_1 p i{
+    margin-right: .4rem;
+}
+.up{
+    display: flex;
+    flex-direction: row;
+}
+.down{
+    display: flex;
+    flex-direction: row;
+}
+.ol{
+    flex-basis: 50%;
+}
+
+/* MEDIA-QUERIES */
+@media only screen and (max-width: 1080px) {
+
+}

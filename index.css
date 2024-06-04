@@ -48,16 +48,20 @@
     text-decoration: none;
     border: 1px solid var(--red);
     color: var(--red);
-    padding: .8rem 1.8rem;
+    padding: .8em 1.8em;
     border-radius: 4px;
+    text-align: center;
+    margin-top: 1.6rem;
+    margin-left: .8rem;
 }
 .signup{
     text-decoration: none;
     background: linear-gradient(to right, #E50914, #99060D);
     color: var(--white);
-    padding: 1rem 1.8rem;
+    padding: 1em 1.8em;
     border-radius: 36px;
     margin-left: .8rem;
+    text-align: center;
 }
 /* HERO */
 .hero_section{
@@ -97,6 +101,47 @@
     width: 150px;
     margin-right: 1rem;
 }
+/* SIDENAV */
+.menu{
+    z-index: 2;
+	position: fixed;
+	top: 36px;
+	right: 20px;
+    font-size: 1.8rem;
+    display: none;
+}
+.sidenav{
+    display: flex;
+	flex-direction: column;
+	position: fixed;
+	top: 0;
+	right: -250px;
+	width: 250px;
+	height: 100vh;
+	background-color: var(--white);
+	z-index: 1;
+	transition: right .5s;
+    border: .1rem solid var(--red);
+}
+.divnav{
+    padding: 8rem 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'MenaRegular', sans-serif;
+    font-size: 1.2rem;
+}
+.divnav ul li{
+    list-style: none;
+	display: block;
+	margin-bottom: 2rem;
+    text-align: center;
+}
+.divnav ul li a{
+    text-decoration: none;
+    color: var(--black);
+}
+
 /* MID */
 .mid{
     position: relative;
@@ -365,6 +410,9 @@ footer img{
 @media only screen and (max-width: 1024PX) {
     nav, .in{
         display: none;
+    }
+    .menu{
+        display: block;
     }
     /* SECTIONS */
     .rect{

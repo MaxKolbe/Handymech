@@ -1,0 +1,29 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --white: #ffffff;
+    --black: #000000; 
+    --red: #E50914;
+}
+@font-face {
+    font-family: 'MenaRegular'; /* You can choose any name for your font */
+    src: url('./fonts/mena-grotesk/Mena/Grotesk/Regular.otf') format('opentype'); 
+}
+@font-face {
+    font-family: 'Downey'; /* You can choose any name for your font */
+    src: url('./fonts/downey/Downey/DEMO.ttf') format('truetype'); 
+}
+@font-face {
+    font-family: 'PlusJakartaSans'; /* You can choose any name for your font */
+    src: url('./fonts/Plus_Jakarta_Sans/static/PlusJakartaSans-Regular.ttf') format('truetype'); 
+}
+
+
+
+/* MEDIA-QUERIES */
+@media only screen and (max-width: 1080px) {
+
+}
