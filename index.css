@@ -110,6 +110,9 @@
     font-size: 1.8rem;
     display: none;
 }
+.fa-bars:before, .fa-navicon:before {
+    display: none;
+}
 .sidenav{
     display: flex;
 	flex-direction: column;
@@ -409,6 +412,9 @@ footer img{
 /* MEDIA QUERIES */
 @media only screen and (max-width: 1024PX) {
     /* SECTIONS */
+    .menu{
+        display: none;
+    }
     .rect{
         display: none;
     }
@@ -451,18 +457,15 @@ footer img{
         margin-left: .8rem;
     }
 }
-@media only screen and (max-width: 960PX){
+@media only screen and (max-width: 980PX){
     nav, .in{
         display: none;
     }
-    .menu{
+    .menu, .fa-bars:before, .fa-navicon:before{ 
         display: block;
     }
 }
 @media only screen and (max-width: 770PX) {
-    .menu{
-        display: block;
-    }
     .container{
         padding: 0 2rem;
     }
